@@ -39,7 +39,7 @@ def get_discount_rate(item):
 
 def process_price(item):
     if isinstance(item, str):
-        return float(item.replace(" ", "").replace(",", ".").replace("₴", ""))
+        return float(item.replace(" ", "").replace(",", ".").replace("€", ""))
     else:
         return item
 
